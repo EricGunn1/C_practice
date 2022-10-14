@@ -5,11 +5,11 @@
 
 int main(){
 	char *hello;
-	//char *goodbye;
+	char goodbye[200];
 	int mem_size = 200;
 
-	//strcpy(goodbye, "This memory is on the stack at address %p\n");
-	//printf("%s\n", goodbye);
+	strcpy(goodbye, "This memory is on the stack");
+	printf("%s at address %p\n", goodbye, &goodbye);
 	
 	hello = (char *) malloc(mem_size);
 
