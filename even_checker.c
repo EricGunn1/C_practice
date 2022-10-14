@@ -4,15 +4,18 @@
 
 int main(int nums, char *num[]){
 	int a;
-	char number[100];
+	int b;
+	char number[10];
 
-	strcpy(number, num[1]);
-	a = atoi(number);
-	if(a % 2 == 0){
-		printf("%d is even\n", a);
-	}
-	else{
-		printf("%d is odd\n", a);
+	for(a = 1; a < nums; a++){
+		strcpy(number, num[a]);
+		b = atoi(number);
+		if(b % 2 == 0){
+			printf("%d is even\n", b);
+		}
+		else{
+			printf("%d is odd\n", b);
+		}
 	}
 	return 0;
 }
