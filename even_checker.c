@@ -8,6 +8,10 @@ int main(int nums, char *num[]){
 	char number[10];
 
 	for(a = 1; a < nums; a++){
+		if(strlen(num[a]) > 10){
+			printf("Number too large\n");
+			break;
+		}
 		strcpy(number, num[a]);
 		b = atoi(number);
 		if(b % 2 == 0){
