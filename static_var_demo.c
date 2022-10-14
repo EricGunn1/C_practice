@@ -15,10 +15,10 @@ int localized(int a){
 }
 
 int main(){
-	printf("'b' initialized as static variable equal to 3.\n'a' equals 1.\nOutput of b+=a is %d\n", stasis(1));
-	printf("'b' retains its value of 4 for next function call.\n'a' equals to 1.\nOutput of b+=a is %d\n", stasis(1));
+	printf("Static variable 'b' equals 3. 'a' equals 1. Output of b+=a is:\n%d\n", stasis(1));
+	printf("Static variable 'b' retains value of 4 for next function call. 'a' equals 1. Output of b+=a is:\n%d\n", stasis(1));
 
-	printf("'b' initialized as local variable equal to 3.\n'a' passed as argument and equals 1.\nOutput of b+=a is %d\n", localized(1));
-	printf("'b' re-initialized as local variable equal to 3.\n'a' equals 1.\nOutput of b+=a is %d\n", localized(1));
+	printf("Local variable 'b' equals 3. 'a' equals 1. Output of b+=a is:\n%d\n", localized(1));
+	printf("Local variabl 'b' re-initialized equal to 3 for next function call. 'a' equals 1. Output of b+=a is:\n%d\n", localized(1));
 	return(0);
 }
